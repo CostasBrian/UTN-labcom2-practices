@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(131, 131, 131);
+    background-color: rgb(206, 206, 206);
+    padding: 6px;
+}
+
+.logo {
+    flex-grow: 1;
+    height: 40px;
+}
+
+.navbar {
+    display: flex;
+    flex-grow: 6;
+}
+
+li a {
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+li:hover {
+    border-bottom: 2px;
+    border-color: brown;
+}
+
+svg {
+    flex-grow: 2;
+    height: 20px;
+}
+
+li {
+    display: inline;
+    text-transform: uppercase;
+}
+
+.main-image {
+    display: flex;
+}

@@ -4,31 +4,31 @@ header {
     border-top: 1px solid rgb(131, 131, 131);
     background-color: rgb(206, 206, 206);
     padding: 6px;
+    justify-content: space-between;
 }
 
 .logo {
-    flex-grow: 1;
     height: 40px;
 }
 
-.navbar {
+nav {
     display: flex;
-    flex-grow: 6;
+    flex-grow: 1;
 }
 
-li a {
+a {
     text-decoration: none;
-    padding-left: 20px;
+    padding: 30px;
 }
 
 li:hover {
-    border-bottom: 2px;
-    border-color: brown;
+    box-sizing: border-box;
+    border-bottom: 2px solid brown;
 }
 
 svg {
-    flex-grow: 2;
     height: 20px;
+    text-decoration: none;
 }
 
 li {
@@ -38,4 +38,27 @@ li {
 
 .main-image {
     display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-background {
+    background-image: url("../img/utn-alumnos.jpg");
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-background {
+    color: white;
+}
+
+.img-content {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 30px;
 }

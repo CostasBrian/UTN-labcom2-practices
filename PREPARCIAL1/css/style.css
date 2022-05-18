@@ -18,16 +18,17 @@ nav {
 
 a {
     text-decoration: none;
-    padding: 30px;
+    color: black;
+    padding: 21px;
+    margin-bottom: 50px;
 }
 
-li:hover {
-    box-sizing: border-box;
-    border-bottom: 2px solid brown;
+li a:hover {
+    border-bottom: 2px solid black;
 }
 
 svg {
-    height: 20px;
+    height: 25px;
     text-decoration: none;
 }
 

@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(5, 50, 50);
+}
+
+#form {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 5px;
+}
+
+button {
+    margin: 10px;
+}

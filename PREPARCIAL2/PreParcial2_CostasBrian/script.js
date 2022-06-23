@@ -16,18 +16,19 @@ const valoresDivisas = {
 //-------------------calcular valor------------------------------------
 function evaluarDivisa() {
     if (selectDivisa.value == "" || inputPesos.value == "") {
-        errorMesage.style.display = "flex";
+        errorMesage.style.display = "flex"
+        resultMesage.style.display = "none"
         setTimeout(() => {
-            errorMesage.style.display = "none";
+            errorMesage.style.display = "none"
         }, 2000);
 
     } else {
         let Pesos = Number(inputPesos.value);
-        let valorDivisa = Number(valoresDivisas[selectDivisa.value]);
+        let valorDivisa = Number(valoresDivisas[selectDivisa.value])
 
         let valor = (Pesos / valorDivisa).toFixed(2);
         resultMesage.innerHTML = `El valor en ${selectDivisa.value} es: $${valor}`
-        resultMesage.style.display = "flex";
+        resultMesage.style.display = "flex"
 
         inputPesos.value = ""
 
@@ -41,9 +42,10 @@ buttonEvaluar.addEventListener('click', evaluarDivisa)
 function agregarDivisa() {
 
     if (inputNewDivisa.value == "" || inputNewValue.value == "") {
-        errorMesage.style.display = "flex";
+        errorMesage.style.display = "flex"
+        resultMesage.style.display = "none"
         setTimeout(() => {
-            errorMesage.style.display = "none";
+            errorMesage.style.display = "none"
         }, 2000);
     } else {
         const opcion = document.createElement("option")

@@ -13,21 +13,33 @@
 <body>
     <div>
         <form id="card" action="">
-            <div>
+            <h1>Calculadora de Divisas</h1>
+            <div class="form">
                 <label for="pesos">Ingrese pesos Argentinos: </label>
                 <input type="text" name="pesos" id="pesos">
+
                 <select name="select" id="select">
                     <option disabled selected value="">seleccione una moneda</option>
                     <option value="dolar">Dolares</option>
                     <option value="euro">Euros</option>
                 </select>
+
                 <button type="button" id="b_evaluar">Evaluar</button>
             </div>
-            <div id="mesage">
-                <p id="result"></p>
+            <div class="form">
+                <label for="new-divisa">Ingrese nueva Divisa: </label>
+                <input type="text" name="new-divisa" id="new-divisa">
+
+                <label for="valor-divisa">Ingrese valor de la divisa: </label>
+                <input type="text" name="valor-divisa" id="valor-divisa">
+
+                <button type="button" id="b_agregar">Agregar</button>
             </div>
-            <div id="mesage">
+            <div class="mesage">
+                <p id="result"></p>
                 <p id="error"> Error: Falta completar campos</p>
+                <p id="new-result">Divisa agregada con exito</p>
+                <p id="new-error"> Error: Falta completar campos</p>
             </div>
         </form>
     </div>

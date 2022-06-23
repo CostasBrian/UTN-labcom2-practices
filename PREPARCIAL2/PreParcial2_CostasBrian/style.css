@@ -1,5 +1,5 @@
 * {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 form div.form {
@@ -10,6 +10,7 @@ form div.form {
 }
 
 form div input {
+    text-align: center;
     width: 240px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -17,14 +18,16 @@ form div input {
 }
 
 form div select {
+    text-align: center;
     width: 250px;
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px 10px;
     border-radius: 10px;
     border: solid 2px black;
 }
 
 form div button {
+    font-size: 18px;
     margin: 28px 0;
     background-color: rgb(21, 105, 4);
     border: 0ch;
@@ -33,22 +36,41 @@ form div button {
     padding: 10px;
 }
 
+h1 {
+    margin-top: 0;
+    font-size: 27px;
+}
+
 body {
-    background-color: rgb(121, 212, 182);
+    background-color: rgb(21, 105, 10);
 }
 
 form {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 26%;
-    height: 500px;
-    background-image: url('divisas.jpg');
+    height: 550px;
     border-radius: 25px;
     padding: 50px;
     box-shadow: 5px 5px 10px 1px #000;
     text-align: center;
     margin: 20px;
+}
+
+form::before {
+    content: "";
+    background-image: url('divisas.jpg');
+    position: absolute;
+    border-radius: 25px;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.5;
 }
 
 .mesage p {
@@ -58,6 +80,7 @@ form {
     background-color: red;
     color: white;
     border-radius: 10px;
+    margin-top: 0;
 }
 
 #error {

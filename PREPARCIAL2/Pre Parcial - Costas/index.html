@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Parcial 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div>
+        <form id="card" action="">
+            <div class="form">
+                <label for="pesos">Ingrese pesos Argentinos: </label>
+                <input type="text" name="pesos" id="pesos">
+                <select name="select" id="select">
+                    <option disabled selected value="">seleccione una moneda</option>
+                    <option value="dolar">Dolares</option>
+                    <option value="euro">Euros</option>
+                </select>
+                <button type="button" id="b_evaluar">Evaluar</button>
+            </div>
+            <div class="form">
+                <label for="new-divisa">Ingrese nueva Divisa: </label>
+                <input type="text" name="new-divisa" id="new-divisa">
+                <label for="valor-divisa">Ingrese valor de la divisa: </label>
+                <input type="text " name="valor-divisa" id="valor-divisa ">
+
+                <button type="button" id="b_agregar">Agregar</button>
+            </div>
+            <div class="mesage">
+                <p id="result"></p>
+                <p id="error"> Error: Falta completar campos</p>
+                <p id="new-result">Divisa agregada con exito</p>
+                <p id="new-error"> Error: Falta completar campos</p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
